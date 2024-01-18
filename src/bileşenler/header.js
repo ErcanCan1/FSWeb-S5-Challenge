@@ -8,7 +8,7 @@ const Header = (baslik, tarih, yazi) => {
   const headerDiv = document.createElement("div");
   const dateSpan = document.createElement("span");
   const tempSpan = document.createElement("span");
-  const h1 = document.crea4("h1");
+  const h1 = document.createElement("h1");
 
   headerDiv.className = "header";//classlistle classname arasında fark yok.
   dateSpan.classList.add("date");
@@ -30,7 +30,8 @@ const Header = (baslik, tarih, yazi) => {
 
 const headerEkleyici = (secici) => {
 
-  document.querySelector("secici").appendChild(Header("Ercan Can", "Web Develloper", "2024"))
+  document.querySelector(secici)
+  .appendChild(Header("Ercan Can", "Web Develloper", "2024"));
   // GÖREV 2
   // ---------------------
   // Tek argümanı olarak bir css seçici alan bu fonksiyonu uygulayın.
